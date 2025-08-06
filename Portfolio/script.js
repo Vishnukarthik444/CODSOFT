@@ -1,3 +1,16 @@
+// const cloudinary = require('cloudinary').v2;
+
+// cloudinary.config({
+//   cloud_name: 'dcpdpntfw',
+//   api_key: '274958816469314',
+//   api_secret: 'erO7ZNxwDJM-HqTaIAOByhQs5vI'
+// });
+
+// cloudinary.uploader.upload('black.png', function(error, result) {
+//   console.log(result);
+// });
+
+/* ----------------------------------------------------------------------------------------------- */
 
   // window.onload = function () {
   //   const homeSection = document.getElementById('home');
