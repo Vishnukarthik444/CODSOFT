@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image" href="/Landing_Page/logo_1.png">
+  <title>NexTrip</title>
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="destination.css" />
+  <link rel="stylesheet" href="booking.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <div id="loading-bar"></div>
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">
+          <a href="#home">
+            <div id="loading-bar"></div>
+            <a href="#home" class="nextrip">NexTrip</a>
+          </a>
+        </div>
+
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active"><b>HOME</b></a></li>
+          <li><a href="#about" class="nav-link"><b>DESTINATIONS</b></a></li>
+          <li><a href="#booking" class="nav-link"><b>BOOK NOW</b></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<!--------------------------------------------------------------------------------------------------->
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-text-container">
+    <h1>Explore the World Your Way !</h1>
+    <p>Breathtaking destinations, curated journeys, and unforgettable moments tailored to your style.</p>
+    <div class="hero-buttons">
+      <a href="#about" class="btn">START BOOKING  <i class="fa-solid fa-arrow-down"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ----------------------------------------------------------------------------------------------- -->
+
+<!-- ABOUT -->
+  <section id="about" class="about">
+    <div class="about-me">
+      <h2>POPULAR DESTINATIONS</h2>
+      <div class="card-grid">
+          <a href="#booking" class="card-link">
+            <div class="card" onmouseover="cardZoomIn(this)" onmouseout="cardZoomOut(this)">
+                <img src="/Landing_Page/Tajmahal.png" alt="Taj">
+                <div class="card-content">
+                    <h3>Taj Mahal, Delhi</h3>
+                    <p>Explore beaches, temples, and vibrant culture.</p>
+                </div>
+            </div>
+           </a>
+          <a href="#booking" class="card-link">
+            <div class="card" onmouseover="cardZoomIn(this)" onmouseout="cardZoomOut(this)">
+                <img src="/Landing_Page/Manali.png" alt="manali">
+                <div class="card-content">
+                    <h3>Manali, Himachal Pradesh</h3>
+                    <p>Explore beaches, temples, and vibrant culture.</p>
+                </div>
+            </div>
+          </a>
+          <a href="#booking" class="card-link">
+            <div class="card" onmouseover="cardZoomIn(this)" onmouseout="cardZoomOut(this)">
+                <img src="/Landing_Page/charminar.png" alt="Bali">
+                <div class="card-content">
+                    <h3>Charminar, Hyderabad</h3>
+                    <p>Explore beaches, temples, and vibrant culture.</p>
+                </div>
+            </div>
+          </a>
+          <a href="#booking" class="card-link">
+            <div class="card" onmouseover="cardZoomIn(this)" onmouseout="cardZoomOut(this)">
+                <img src="/Landing_Page/tamilnadu.png" alt="Bali">
+                <div class="card-content">
+                    <h3>Tamil Nadu</h3>
+                    <p>Explore beaches, temples, and vibrant culture.</p>
+                </div>
+            </div>
+          </a>
+            
+        </div>
+        <div class="section-separator"></div>
+  </section>
+  
+
+<!-- /* ----------------------------------------------------------------------------------------------- */ -->
+
+  <section id="booking" class="booking-section">
+        <h2>Book Your Trip</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your email" required>
+            <select required>
+                <option value="">Choose Destination</option>
+                <option>Taj Mahal, Delhi</option>
+                <option>Manali, Himachal Pradesh</option>
+                <option>Charminar, Hyderabad</option>
+                <option>Tamil Nadu</option>
+            </select>
+            <input type="date" required>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+<!-- /* ----------------------------------------------------------------------------------------------- */ -->
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2025 Vishnu_Karthik. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- /* ----------------------------------------------------------------------------------------------- */ -->
+
+<script src="landing.js">
+  document.getElementById("refresh-logo").addEventListener("click", () => {
+  location.reload(); // Refreshes the page
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.about-me {
+  max-width: 800px;
+}
+
+.about-me h2 {
+  color: #8B0000; 
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.about-me p {
+  font-size: 1.1rem;
+  line-height: 2rem;
+  color: #222;
+  /* font-weight: 700; */
+}
+
+.section-separator {
+  width: 600px;
+  height: 2px;
+  margin: 2rem auto; 
+  background: linear-gradient(to right, transparent, #ccc, transparent);
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+.about-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.games {
+  flex: 2;
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-align: left;
+  margin-left: -10rem;
+}
+
+/* ----------------------------------------------------------------------------------------------- */
+
+.skills {
+  flex: 1;
+  text-align: left;
+}
+
+.skills .skills-heading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills li {
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.skills li::after {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #c8c8c8;
+  margin-top: 0.5rem;
+  width: 140%;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+.cv-cont-btn{
+    padding-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cv-btn{
+  display: inline-block;            /* Ensures the button acts as an inline element */
+  padding: 1rem 7rem;               /* Spacing inside the button */
+  /* border: 3px solid black;          White border */
+  color: white;                     /* White text */
+  background: black;          /* Transparent background */
+  font-size: 0.9rem;                  /* Standard readable font size */
+  font-weight: 700;                 /* Extra bold */
+  text-decoration: none;            /* Remove underline */
+  letter-spacing: 2px;            /* Improve spacing between letters */
+  white-space: nowrap;             /* Keeps text on a single line */
+  text-align: center;               /* Center-align text */
+  transition: background 0.3s ease-in-out;        /*Smooth hover effects */
+  cursor: pointer;                  /* Pointer on hover */
+  min-width: 220px;
+}
+
+.contact-btn{
+  display: inline-block;            /* Ensures the button acts as an inline element */
+  padding: 1rem 7rem;               /* Spacing inside the button */
+  /* border: 3px solid white;          White border */
+  color: black;                     /* White text */
+  background: #c8c8c8;          /* Transparent background */
+  font-size: 0.9rem;                  /* Standard readable font size */
+  font-weight: 700;                 /* Extra bold */
+  text-decoration: none;            /* Remove underline */
+  letter-spacing: 2px;            /* Improve spacing between letters */
+  white-space: nowrap;             /* Keeps text on a single line */
+  text-align: center;               /* Center-align text */
+  transition: background 0.3s ease;        /*Smooth hover effects*/
+  min-width: 220px;
+  cursor: pointer;                  /* Pointer on hover */
+}
+
+.cv-btn:hover{
+    background: #8B0000;
+}
+
+.contact-btn:hover{
+    background: #545454;
+    color: white;
+}
