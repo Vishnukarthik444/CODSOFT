@@ -31,7 +31,7 @@ body {
 
 /* ----------------------------------------------------------------------------------------------- */
 .hero{
-  background-image: url(/Portfolio/black_optimized_.webp);
+  background-image: url(/Portfolio/black_optimized_.png);
   background-attachment: fixed;   /* Optional: Keeps image fixed while scrolling */
   background-size: cover;
   background-position: center;
